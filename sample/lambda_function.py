@@ -1,6 +1,8 @@
 import boto3
 
-def get_instances():
-    ec2 = boto3.client('ec2')
+def lambda_handler(event, context):
     dynamodb = boto3.client('dynamodb')
-    return "foo"
+    return "do something"
+
+def get_table_name_from_res(res):
+    return res['Table']['TableName']

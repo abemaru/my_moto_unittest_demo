@@ -12,3 +12,6 @@ pytest = "*"
 
 [requires]
 python_version = "3.9"
+
+[scripts]
+test_all = "pytest --log-cli-level=INFO test/"
